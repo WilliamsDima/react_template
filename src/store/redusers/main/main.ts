@@ -1,21 +1,21 @@
-import { handler } from './../../../hooks/helpers'
 import { createSlice } from '@reduxjs/toolkit'
 import { IStore } from './types'
+import { mainActions } from '../../actions/main/mainActions'
 
 const initialState: IStore = {
     template: 'React Williams Template'
 }
 
-const counterSlice = createSlice({
+const mainSlice = createSlice({
     name: 'main',
     initialState,
     reducers: {
-        handlers: handler
+        ...mainActions
     },
 })
 
 export const mainReducer = (state = initialState, action: any) => {
-    return counterSlice.reducer(state, action);
+    return mainSlice.reducer(state, action);
 };
 
-export const { handlers } = counterSlice.actions;
+export const { setUsers } = mainSlice.actions;
