@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Route,
   Routes,
@@ -6,7 +7,7 @@ import Home from "../screens/Home"
 import NotFount from "../screens/NotFound"
 import { RoutesNames } from "./routes-names"
 
-const Navigations = (props: any) => {
+const Navigations = () => {
 
   return (
     <>

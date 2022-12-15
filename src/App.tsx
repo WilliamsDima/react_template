@@ -1,6 +1,7 @@
+import React from 'react'
 import './App.scss'
 import { Provider } from 'react-redux'
-import { store } from './store/index'
+import { store } from './stores/index'
 import Navigations from './navigations/routes'
 import { BrowserRouter } from 'react-router-dom'
 
